@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+
+<div class="container">
+    <img src="/assets/imgs/DRIRAD-small.png">
+    <div class="inner">
+        <div id="content">
+            <div id="home" class="content-region hide">
+                <h2>Welcome to the DRI-RAD Website!</h2>
+                <p>
+                    where you can find the awesome applications that the DRI-RAD team created!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //setting up Navbar active item
+    $(document).ready(function(){
+        $(".nav-link").find(".active").removeClass("active");
+        $(".nav-dropdown").find(".active").removeClass("active");
+        $("#navHome").addClass("active");
+    });
+</script>

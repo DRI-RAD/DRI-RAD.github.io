@@ -1,0 +1,60 @@
+---
+permalink: /appsET.html
+layout: default
+---
+
+<div class="container">
+    <div><h4>Evapotranspiration Apps</h4><br></div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    OpenET HUC8 annual ET histograms (ag vs. non-ag pixels) by state
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <div class="row align-items-start">
+                        <div class="col-6">
+                            <img src="/assets/imgs/app1-s.png" class="rounded float-start" alt="...">
+                        </div>
+                        <div class="col-6">
+                            <strong>Project: </strong>Western US+ - OpenET<br><br>
+                            <a class="btn btn-primary" href="https://code.earthengine.google.com/882c375973b8c3c8e8ade6022a745bff" role="button" target="_blank">to the App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Model Ensemble MAD and ensemble count comparisons
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <div class="row align-items-start">
+                        <div class="col-6">
+                            <img src="/assets/imgs/app3-s.png" class="rounded float-start" alt="...">
+                        </div>
+                        <div class="col-6">
+                            <strong>Project: </strong>USGS-OpenET<br><br>
+                            <a class="btn btn-primary" href="https://code.earthengine.google.com/7c033c4a3fc204c959e42dd5b16461ba" role="button" target="_blank">to the App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //setting up Navbar active item
+    $(document).ready(function(){
+        $(".nav-link").find(".active").removeClass("active");
+        $(".nav-dropdown").find(".active").removeClass("active");
+        $("#navbarDropdown").addClass("active");
+        $("#appsET").addClass("active");
+    });
+</script>
